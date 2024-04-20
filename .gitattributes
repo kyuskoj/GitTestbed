@@ -1,2 +1,23 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Unity files
+*.anim                  						text eol=lf
+*.asmdef                						text eol=lf
+*.asset                 						 	 eol=lf
+*.terrain.asset									binary
+*.controller            						text eol=lf
+*.mat                   						text eol=lf
+*.meta                  						text eol=lf
+*.overrideController    						text eol=lf
+*.prefab                merge=unityyamlmerge 	text eol=lf
+*.preset                						text eol=lf
+*.spriteatlas           						text eol=lf
+*.unity                 merge=unityyamlmerge 	text eol=lf	
+*.mixer                 						text eol=lf
+*.renderTexture         						text eol=lf
+*.json                  						text eol=lf
+*.xml                   						text eol=lf
+
+# Code files
+*.sln                   						text eol=crlf
+*.csproj                						text eol=crlf
+*.cs                    diff=csharp				text eol=crlf
+*.shader                 						text eol=crlf
