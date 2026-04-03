@@ -19,6 +19,7 @@ public class CharacterMovement : MonoBehaviour
 
         Debug.Log("Character is moving.");
         
+        Debug.Log("Main BRANCH");
 
 
         // Player rotation (optional, depending on your game's camera and control scheme)
