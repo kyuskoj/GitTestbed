@@ -6,7 +6,7 @@ public class CharacterMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public float rotationSpeed = 100f;
 	
-	public float test02 = 31f;
+    public float testbranch_001;
 
     void Update()
     {
@@ -17,7 +17,7 @@ public class CharacterMovement : MonoBehaviour
         Vector3 movement = new Vector3(horizontalInput, 0f, verticalInput) * moveSpeed * Time.deltaTime;
         transform.Translate(movement);
 
-        Debug.Log("Character is moving.");
+        Debug.Log("Character is moving. BRACH001: " + testbranch_001);
         
         Debug.Log("Main BRANCH");
 
