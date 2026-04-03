@@ -6,7 +6,7 @@ public class CharacterMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public float rotationSpeed = 100f;
 	
-	public float test02 = 31f;
+    public float testbranch_001;
 
     void Update()
     {
