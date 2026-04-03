@@ -18,6 +18,8 @@ public class CharacterMovement : MonoBehaviour
         transform.Translate(movement);
 
         Debug.Log("Character is moving.");
+
+        Debug.Log("BR2 value: " + test02);
         
 
 
