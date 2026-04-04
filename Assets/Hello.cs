@@ -13,10 +13,10 @@ namespace MyGame
         // Start is called before the first frame update
         void Start()
         {
-            Debug.Log("Hello World!");
+            Debug.Log("Hello World!222");
             if (gameObject.name.Contains("h"))
             {
-                Debug.Log("오케이");
+                Debug.Log("오케이2");
             }
 
 
