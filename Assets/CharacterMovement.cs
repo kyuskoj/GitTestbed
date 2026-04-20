@@ -17,7 +17,7 @@ public class CharacterMovement : MonoBehaviour
         Vector3 movement = new Vector3(horizontalInput, 0f, verticalInput) * moveSpeed * Time.deltaTime;
         transform.Translate(movement);
 
-        Debug.Log("Character is moving. BRACH001: " + testbranch_001);
+        Debug.Log("Character is moving. BRACH001: 22 " + testbranch_001);
         
         Debug.Log("Main BRANCH");
 
