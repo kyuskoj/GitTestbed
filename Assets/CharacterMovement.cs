@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
+	public float test1 = 0f;
     public float moveSpeed = 5f;
     public float rotationSpeed = 100f;
 	
