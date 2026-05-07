@@ -18,6 +18,7 @@ public class CharacterMovement : MonoBehaviour
         transform.Translate(movement);
 
         Debug.Log("Character is moving. BRACH001: 22 " + testbranch_001);
+		Debug.Log("Test 01");
         
         Debug.Log("Main BRANCH");
 
