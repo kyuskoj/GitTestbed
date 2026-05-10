@@ -3,12 +3,15 @@ name: Sync GitHub Issues to Notion
 on:
   issues:
     types: [labeled]
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   sync_to_notion:
     # 'sync' 라벨이 붙었을 때만 실행
     if: github.event.label.name == 'sync'
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
     steps:
       - name: Set up Python
         uses: actions/setup-python@v5
