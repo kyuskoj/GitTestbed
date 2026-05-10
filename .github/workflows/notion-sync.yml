@@ -2,19 +2,16 @@ name: Sync GitHub Issues to Notion
 
 on:
   issues:
-    types: [labeled]
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    types: [labeled, closed]
 jobs:
   sync_to_notion:
-    # 'sync' 라벨이 붙었을 때만 실행
-    if: github.event.label.name == 'sync'
+    if: github.event.action == 'closed' || github.event.label.name == 'sync'
     runs-on: ubuntu-latest
     permissions:
       issues: write
     steps:
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.10'
 
@@ -182,9 +179,9 @@ jobs:
               sys.exit(1)
           PYEOF
 
-      # 3. 모든 작업이 성공하면 'sync' 라벨 자동으로 떼기
+      # 3. 'sync' 라벨 자동으로 떼기
       - name: Remove 'sync' label
-        if: success()
+        if: always() && github.event.label.name == 'sync'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
