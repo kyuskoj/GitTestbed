@@ -109,7 +109,7 @@ jobs:
           proj_start, proj_target = get_project_dates()
 
           # 날짜 세팅: Project의 Start date가 있으면 사용, 없으면 이슈 생성일(CREATED_AT) 사용
-          final_start = proj_start if proj_start else CREATED_AT
+          final_start = proj_start if proj_start else CREATED_AT[:10]
           date_prop = {"start": final_start}
           if proj_target:
               date_prop["end"] = proj_target
