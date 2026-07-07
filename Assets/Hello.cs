@@ -19,6 +19,8 @@ namespace MyGame
                 Debug.Log("오케이23");
 				Debug.Log("--");
 				Debug.Log("11");
+				Debug.Log("22");
+				Debug.Log("33");
             }
 
 
