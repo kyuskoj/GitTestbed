@@ -16,7 +16,9 @@ namespace MyGame
             Debug.Log("Hello World!222 okok223344445566");
             if (gameObject.name.Contains("h"))
             {
-                Debug.Log("오케이2");
+                Debug.Log("오케이23");
+				Debug.Log("--");
+				Debug.Log("11");
             }
 
 
